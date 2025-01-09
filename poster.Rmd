@@ -37,9 +37,14 @@ secondary_colour:
 accent_colour:
   "#e84a3c"
 
+# Title Box
+titlebox_bordercol: "#e84a3c"
+logoleft_name: "Figures/msu.svg"
+
 # Poster Body
 column_numbers: 3
 sectitle_bgcol: "#e84a3c"
+sectitle_bordercol: "#d1190d"
 ---
 
 # Introduction
@@ -59,3 +64,105 @@ sectitle_bgcol: "#e84a3c"
 ![](Figures/prisma.png){width="1400"}
 
 # Results
+
+```{r figure 3 heatmap, warning=FALSE, echo=FALSE, message=FALSE, fig.width=14, fig.height=12}
+# Install and load necessary libraries
+library(tidyverse)
+library(papaja)
+
+# Read the data
+data <- read.csv('my_tablez.csv')
+
+# Convert title column
+data <- data %>% mutate(Title = c("Bissonnette et al. (2019)",
+                  "Chen et al. (2022)",
+                  "Choensawat and Sookhanaphibarn (2019)",
+                  "Gluck et al. (2020)",
+                  "Gutierrez-Maldonado et al. (2010)",
+                  "Hassan et al. (2022)",
+                  "King et al. (2022)",
+                  "King et al. (2022)",
+                  "Le Noury et al. (2021)",
+                  "Li et al. (2020)",
+                  "Li et al. (2020)",
+                  "Lyu et al. (2021)",
+                  "Michalski (2019)",
+                  "Mirchi et al. (2020)",
+                  "Qi et al. (2021)",
+                  "Ropelato et al. (2017)",
+                  "Sadeghi Esfahlani (2020)",
+                  "Sharma (2020)",
+                  "Stanica et al. (2018)",
+                  "Truong (2022)",
+                  "Wang (2021)",
+                  "Winkler-Schwartz et al. (2019)",
+                  "Yilmaz et al. (2022)",
+                  "Zhang and Tsai (2021)",
+                  "Liaw et al. (2023)")
+)
+# Convert data into a long format
+data_long <- gather(data, key = "Question", value = "Response", -Title)
+
+# Extract the numbering from the "Question" column
+data_long$Question <- str_extract(data_long$Question, "(?<=X)[0-9]+[a-z]?")
+
+# Assign a numeric value for each response type for color mapping
+data_long$Value <- case_when(
+  data_long$Response == "X" ~ 1,
+  data_long$Response == "X*" ~ 2,
+  TRUE ~ 3
+)
+
+# Filter na values
+data_long <- data_long %>% filter(!is.na(Question))
+
+# Plot the heatmap
+ggplot(data_long, aes(x = Question, y = Title, fill = as.factor(Value))) + 
+  geom_tile(color = "white") +
+  scale_fill_manual(values = c("#e84a3c", "#ffdb58", "white"), 
+                    labels = c("Yes", "Borderline Yes", "No"),
+                    name = "Case Type") +
+ # labs(title = "Heatmap of Responses", x = "Question", y = "Title") +
+  labs(x = "Research Question", y = "Article") + 
+  theme_apa() +
+  theme(
+ plot.background = element_rect(color = "lightgray", fill = NA, size = 1), # Border around plot
+    panel.background = element_blank(),  # Removes grid background
+    text = element_text(size = 12, family = "Palatino"), # Set font size and family
+    axis.title = element_text(size = 22, family = "Palatino"), # Larger axis titles
+    axis.text = element_text(size = 18, family = "Palatino"), # Axis labels
+    legend.text = element_text(size = 20, family = "Palatino"), # Legend text
+    legend.title = element_text(size = 22, family = "Palatino") # Legend title
+  ) 
+  #theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8))
+
+```
+
+# Discussion
+
+```{r table 6, warning=FALSE, echo=FALSE, message=FALSE}
+library(knitr)
+library(kableExtra)
+library(readxl)
+
+# Load data
+future_research_guidelines <- read_xlsx("future_research_guidelines.xlsx")
+
+# Create styled table
+kable(
+  future_research_guidelines,
+  format = "html", # Ensure compatibility with posterdown_html
+  caption = "Table 6: Guidelines for Future AI-VR Training Research and Adherence to Best Practices."
+) %>%
+  kable_styling(
+    font_size = 30, # Increase text size
+    bootstrap_options = c("striped", "hover"), # Optional styling
+    full_width = FALSE, # Keeps table compact
+    position = "center" # Centers the table
+  ) %>%
+  footnote(
+    general = "This table highlights guidelines for achieving each of the training best practices suggested by Salas (2012)."
+  )
+```
+
+# References
