@@ -39,7 +39,7 @@ accent_colour:
 
 # Title Box
 titlebox_bordercol: "#e84a3c"
-logoleft_name: "Figures/msu.svg"
+#logoleft_name: "Figures/msu.svg"
 
 # Poster Body
 column_numbers: 3
@@ -47,6 +47,7 @@ sectitle_bgcol: "#e84a3c"
 sectitle_bordercol: "#d1190d"
 ---
 
+::: {.column}
 # Introduction
 
 **Very little research** exists highlighting the presence or absence of training best practices.
@@ -62,7 +63,9 @@ sectitle_bordercol: "#d1190d"
 # Methods
 
 ![](Figures/prisma.png){width="1400"}
+:::
 
+::: {.column}
 # Results
 
 ```{r figure 3 heatmap, warning=FALSE, echo=FALSE, message=FALSE, fig.width=14, fig.height=12}
@@ -137,7 +140,9 @@ ggplot(data_long, aes(x = Question, y = Title, fill = as.factor(Value))) +
   #theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8))
 
 ```
+:::
 
+::: {.column}
 # Discussion
 
 ```{r table 6, warning=FALSE, echo=FALSE, message=FALSE}
@@ -166,3 +171,4 @@ kable(
 ```
 
 # References
+:::
