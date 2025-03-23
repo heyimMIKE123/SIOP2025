@@ -29,6 +29,7 @@ affiliation:
 output: posterdown::posterdown_html
 
 
+
 # Main Color Scheme
 primary_colour: 
   "#d1190d"
@@ -50,7 +51,7 @@ sectitle_bordercol: "#d1190d"
 ::: column
 # Introduction
 
-**Very little research** exists highlighting the presence or absence of training best practices.
+This review analyzes **best practices** and **preliminary findings** in AI-VR research, revealing gaps and providing guidelines for future studies.
 
 `RQ 1:` Are the current VR and AI training programs utilizing best practices from the science of training?
 
@@ -62,7 +63,7 @@ sectitle_bordercol: "#d1190d"
 
 # Methods
 
-![](Figures/prisma.png){width="1250"}
+![](Figures/prisma_zoomed.png){width="1250"}
 :::
 
 :::: column
@@ -155,11 +156,11 @@ The **least implemented** are learning objectives (1a; `24%`), self-efficacy boo
 
 <hr style="border: none; border-top: 3px dotted red; width: 100%; margin: 20px 0;">
 
-`RQ 4:` Of the articles that do compare AI-VR to VR training programs, **AI was found to significantly enhance training outcomes**. Qi et al. (2021) found that AI had a **moderate effect** on performance. Truong et al. (2022) demonstrated that AI **doubles the log-odds** of passing a trial, indicating improved success rates with AI integration in VR training.
+`RQ 4:` Of the articles that do compare AI-VR to VR training programs, **AI was found to significantly enhance training outcomes**.
 
-<br>
+Qi et al. (2021) found that AI had a **moderate effect** on performance. Truong et al. (2022) demonstrated that AI **doubles the log-odds** of passing a trial, indicating improved success rates with AI integration in VR training.
 
-::::
+:::
 
 ::: column
 # Discussion
@@ -190,10 +191,6 @@ kable(
   )
 ```
 
-# References
+-   Future research should directly test the effects of AI against a control in VR training
 :::
-
-::::
-
-::::
 ::::
