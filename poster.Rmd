@@ -29,7 +29,6 @@ affiliation:
 output: posterdown::posterdown_html
 
 
-
 # Main Color Scheme
 primary_colour: 
   "#d1190d"
@@ -67,6 +66,7 @@ This review analyzes **best practices** and **preliminary findings** in AI-VR re
 :::
 
 :::: column
+
 # Results
 
 ```{r figure 3 heatmap, warning=FALSE, echo=FALSE, message=FALSE, fig.width=13, fig.height=11, fig.align='center'}
@@ -193,4 +193,5 @@ kable(
 
 -   Future research should directly test the effects of AI against a control in VR training
 :::
+
 ::::
