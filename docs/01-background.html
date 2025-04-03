@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -121,31 +141,31 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-research_questions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02-research_questions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Research Questions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-methods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03-methods</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04-results</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Results</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-discussion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">05-discussion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">06-references</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -158,7 +178,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background"><span class="header-section-number">2.1</span> Background</a></li>
+  <li><a href="#an-introduction-to-ai-vr-training-programs" id="toc-an-introduction-to-ai-vr-training-programs" class="nav-link active" data-scroll-target="#an-introduction-to-ai-vr-training-programs"><span class="header-section-number">2.1</span> An Introduction to AI-VR Training Programs</a></li>
+  <li><a href="#the-role-of-ai-in-vr-training" id="toc-the-role-of-ai-in-vr-training" class="nav-link" data-scroll-target="#the-role-of-ai-in-vr-training"><span class="header-section-number">2.2</span> The Role of AI in VR Training</a></li>
   </ul>
 </nav>
     </div>
@@ -184,11 +205,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="background" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="background"><span class="header-section-number">2.1</span> Background</h2>
-<p>This is a background.</p>
+<section id="an-introduction-to-ai-vr-training-programs" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="an-introduction-to-ai-vr-training-programs"><span class="header-section-number">2.1</span> An Introduction to AI-VR Training Programs</h2>
+<p>VR is an effective method for organizational training, as it allows trainees to experience situations that cannot be lived in the real world due to time constraints, physical inaccessibility, dangers in the real situation, or ethical issues <span class="citation" data-cites="freina2015literature">(<a href="06-references.html#ref-freina2015literature" role="doc-biblioref">Freina &amp; Ott, 2015</a>)</span>. Meta-analyses have further demonstrated the effectiveness of VR training, finding that VR training is more effective over alternative training methods in both specific <span class="citation" data-cites="haque2006meta chen2020effectiveness howard2020meta">(<a href="06-references.html#ref-chen2020effectiveness" role="doc-biblioref">F.-Q. Chen et al., 2020</a>; <a href="06-references.html#ref-haque2006meta" role="doc-biblioref">Haque &amp; Srinivasan, 2006</a>; <a href="06-references.html#ref-howard2020meta" role="doc-biblioref">Howard &amp; Gutworth, 2020</a>)</span> and general <span class="citation" data-cites="howard2021meta">(<a href="06-references.html#ref-howard2021meta" role="doc-biblioref">Howard et al., 2021</a>)</span> training modalities. AI has already found benefits in traditional learning platforms, specifically aiding in personalization, tutoring, and evaluation of e-learning platforms. Recently, researchers have begun combining similar AI applications with VR training programs. Before diving into AI-VR training, it is important to first understand VR and AI separately.</p>
+</section>
+<section id="the-role-of-ai-in-vr-training" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="the-role-of-ai-in-vr-training"><span class="header-section-number">2.2</span> The Role of AI in VR Training</h2>
+<p>AI’s capability in learning and development domains has resulted in several creative applications of AI in VR training. Several researchers have employed tactics similar to those used in AI e-learning (AIeL) models, using AI as an assessment tool inside of VR training programs <span class="citation" data-cites="bissonnette2019artificial yilmaz2022continuous sadeghi2020development">(<a href="06-references.html#ref-bissonnette2019artificial" role="doc-biblioref">Bissonnette et al., 2019</a>; <a href="06-references.html#ref-sadeghi2020development" role="doc-biblioref">Sadeghi Esfahlani et al., 2020</a>; <a href="06-references.html#ref-yilmaz2022continuous" role="doc-biblioref">Yilmaz et al., 2022</a>)</span>. In addition, AI-generated feedback has received much attention and implementation into VR training <span class="citation" data-cites="sadeghi2020development chen2022robot king2022automated li2020simulation">(<a href="06-references.html#ref-chen2022robot" role="doc-biblioref">Y.-L. Chen et al., 2022</a>; <a href="06-references.html#ref-king2022automated" role="doc-biblioref">King et al., 2022</a>; <a href="06-references.html#ref-li2020simulation" role="doc-biblioref">J. Li et al., 2020</a>; <a href="06-references.html#ref-sadeghi2020development" role="doc-biblioref">Sadeghi Esfahlani et al., 2020</a>)</span>. Thanks to advancements in its ability to handle complex tasks, AI has also been incorporated into advanced non-player characters (NPCs) that help provide information to the trainee <span class="citation" data-cites="li2020virtual">(<a href="06-references.html#ref-li2020virtual" role="doc-biblioref">M. Li et al., 2020</a>)</span>. Researchers have also begun using AI to utilize decision-tree logic that customizes a user’s learning experience <span class="citation" data-cites="ropelato2018adaptive">(<a href="06-references.html#ref-ropelato2018adaptive" role="doc-biblioref">Ropelato et al., 2018</a>)</span>. AI is even being used to allow users to learn about and manipulate machine learning algorithms in virtual environments, while having these changes affect real ML algorithms in an external Python environment <span class="citation" data-cites="lyu2021aiive">(<a href="06-references.html#ref-lyu2021aiive" role="doc-biblioref">Lyu et al., 2021</a>)</span>. These are just some of the many ways AI is being used to enhance the VR training experience, further highlighting the versatility that AI brings to this area. With so many inventive uses of AI being implemented into VR, it is no surprise that researchers are enthusiastic about the future of VR training.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-bissonnette2019artificial" class="csl-entry" role="listitem">
+Bissonnette, V., Mirchi, N., Ledwos, N., Alsidieri, G., Winkler-Schwartz, A., &amp; Del Maestro, R. F. (2019). Artificial intelligence distinguishes surgical training levels in a virtual reality spinal task. <em>The Journal of Bone and Joint Surgery. American Volume</em>, <em>101</em>(23), e127.
+</div>
+<div id="ref-chen2020effectiveness" class="csl-entry" role="listitem">
+Chen, F.-Q., Leng, Y.-F., Ge, J.-F., Wang, D.-W., Li, C., Chen, B., &amp; Sun, Z.-L. (2020). Effectiveness of virtual reality in nursing education: Meta-analysis. <em>Journal of Medical Internet Research</em>, <em>22</em>(9), e18290.
+</div>
+<div id="ref-chen2022robot" class="csl-entry" role="listitem">
+Chen, Y.-L., Hsu, C.-C., Lin, C.-Y., &amp; Hsu, H.-H. (2022). Robot-assisted language learning: Integrating artificial intelligence and virtual reality into english tour guide practice. <em>Education Sciences</em>, <em>12</em>(7), 437.
+</div>
+<div id="ref-freina2015literature" class="csl-entry" role="listitem">
+Freina, L., &amp; Ott, M. (2015). A literature review on immersive virtual reality in education: State of the art and perspectives. <em>The International Scientific Conference Elearning and Software for Education</em>, <em>1</em>, 10–1007.
+</div>
+<div id="ref-haque2006meta" class="csl-entry" role="listitem">
+Haque, S., &amp; Srinivasan, S. (2006). A meta-analysis of the training effectiveness of virtual reality surgical simulators. <em>IEEE Transactions on Information Technology in Biomedicine</em>, <em>10</em>(1), 51–58.
+</div>
+<div id="ref-howard2020meta" class="csl-entry" role="listitem">
+Howard, M. C., &amp; Gutworth, M. B. (2020). A meta-analysis of virtual reality training programs for social skill development. <em>Computers &amp; Education</em>, <em>144</em>, 103707.
+</div>
+<div id="ref-howard2021meta" class="csl-entry" role="listitem">
+Howard, M. C., Gutworth, M. B., &amp; Jacobs, R. R. (2021). A meta-analysis of virtual reality training programs. <em>Computers in Human Behavior</em>, <em>121</em>, 106808.
+</div>
+<div id="ref-king2022automated" class="csl-entry" role="listitem">
+King, S., Boyer, J., Bell, T., &amp; Estapa, A. (2022). An automated virtual reality training system for teacher-student interaction: A randomized controlled trial. <em>JMIR Serious Games</em>, <em>10</em>(4), e41097.
+</div>
+<div id="ref-li2020simulation" class="csl-entry" role="listitem">
+Li, J., Mei, X., Wang, J., Xie, B., &amp; Xu, Y. (2020). Simulation experiment teaching for airport fire escape based on virtual reality and artificial intelligence technology. <em>2020 IEEE 2nd International Conference on Civil Aviation Safety and Information Technology (ICCASIT</em>, 1014–1017.
+</div>
+<div id="ref-li2020virtual" class="csl-entry" role="listitem">
+Li, M., Sun, Z., Jiang, Z., Tan, Z., &amp; Chen, J. (2020). A virtual reality platform for safety training in coal mines with AI and cloud computing. <em>Discrete Dynamics in Nature and Society</em>, <em>2020</em>, 1–7.
+</div>
+<div id="ref-lyu2021aiive" class="csl-entry" role="listitem">
+Lyu, Z., Li, J., &amp; Wang, B. (2021). AIive: Interactive visualization and sonification of neural networks in virtual reality. <em>2021 IEEE International Conference on Artificial Intelligence and Virtual Reality (AIVR)</em>, 251–255.
+</div>
+<div id="ref-ropelato2018adaptive" class="csl-entry" role="listitem">
+Ropelato, S., Zünd, F., Magnenat, S., Menozzi, M., &amp; Sumner, R. (2018). Adaptive tutoring on a virtual reality driving simulator. <em>International SERIES on Information Systems and Management in Creative Emedia (CreMedia)</em>, <em>2017</em>(2), 12–17.
+</div>
+<div id="ref-sadeghi2020development" class="csl-entry" role="listitem">
+Sadeghi Esfahlani, S., Izsof, V., Minter, S., Kordzadeh, A., Shirvani, H., &amp; Esfahlani, K. S. (2020). Development of an interactive virtual reality for medical skills training supervised by artificial neural network. <em>Intelligent Systems and Applications: Proceedings of the 2019 Intelligent Systems Conference (IntelliSys) Volume 2</em>, 473–482.
+</div>
+<div id="ref-yilmaz2022continuous" class="csl-entry" role="listitem">
+Yilmaz, R., Winkler-Schwartz, A., Mirchi, N., Reich, A., Christie, S., Tran, D. H., Ledwos, N., Fazlollahi, A. M., Santaguida, C., Sabbagh, A. J., et al. (2022). Continuous monitoring of surgical bimanual expertise using deep neural networks in virtual reality simulation. <em>NPJ Digital Medicine</em>, <em>5</em>(1), 54.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -619,8 +688,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02-research_questions.html" class="pagination-link" aria-label="02-research_questions">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02-research_questions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./02-research_questions.html" class="pagination-link" aria-label="Research Questions">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Research Questions</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

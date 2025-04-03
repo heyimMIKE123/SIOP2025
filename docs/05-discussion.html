@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; 05-discussion – Can AI Enhance VR Training?</title>
+<title>6&nbsp; Discussion – Can AI Enhance VR Training?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -68,6 +88,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+
+<script src="site_libs/tabwid-1.1.3/tabwid.js"></script>
+
 
 
 </head>
@@ -81,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-discussion.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">05-discussion</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-discussion.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -121,31 +145,31 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-research_questions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02-research_questions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Research Questions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-methods.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">03-methods</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04-results</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Results</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./05-discussion.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">05-discussion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">06-references</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -161,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">05-discussion</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Discussion</span></h1>
 </div>
 
 
@@ -178,8 +202,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>This systematic literature review aimed to address whether AI-VR research follows learning and development best practices and whether AI adds incremental learning outcomes to VR training.Based on the molar view these results provide, this review presents several guidelines for AI-VR training programs going forward. The aim of these guidelines are to provide researchers of all disciplines with the tools needed to adhere to training best practices. These guidelines are synthesized and displayed in the table below, and build off of previous training research <span class="citation" data-cites="salas2012science">(<a href="06-references.html#ref-salas2012science" role="doc-biblioref">Salas et al., 2012</a>)</span>. We also recommend that researchers use a proper counterfactual (e.g., a control group) and adequate sample size in future studies.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-8f3e5dc8{table-layout:auto;}.cl-8f334dc0{font-family:'Times New Roman';font-size:12pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-8f334dc1{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:italic;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-8f334dc2{font-family:'Times New Roman';font-size:12pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-8f383240{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 2;background-color:transparent;}.cl-8f383241{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 2;background-color:transparent;}.cl-8f383242{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-8f384f82{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8f384f83{background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8f384f84{background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0.5pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8f384f85{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8f384f86{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8f384f87{background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8f384f88{background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8f384f89{background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-8f3e5dc8"><thead><tr style="overflow-wrap:break-word;"><th colspan="2" class="cl-8f384f82"><p class="cl-8f383240"><span class="cl-8f334dc0">Table</span></p></th></tr><tr style="overflow-wrap:break-word;"><th colspan="2" class="cl-8f384f83"><p class="cl-8f383240"><span class="cl-8f334dc1">Guidelines for Future AI-VR Training Research and Adherence to Best Practices</span></p></th></tr><tr style="overflow-wrap:break-word;"><th class="cl-8f384f84"><p class="cl-8f383241"><span class="cl-8f334dc2">Research Question</span></p></th><th class="cl-8f384f84"><p class="cl-8f383241"><span class="cl-8f334dc2">Guidelines for Future Research</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1a. Are learning objectives created and clarified to the reader?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Create clear learning objectives by including a behavior and criterion. The condition is often implied in AI-VR training programs, but it can be helpful to include.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1b. Is the training delivered in a way that builds trainees' belief in their ability to learn and display trained skills (self-efficacy)?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Measure self-efficacy directly using a self-efficacy assessment.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1c. Does the training encourage trainees to participate in training to learn rather than to appear capable (promotes a learning orientation)?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Include effective feedback mechanisms, encourage error making, and create training aspects that focus on learning rather than performance.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1d. Does the training engage trainees and build their interest?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Measure engagement directly using an engagement assessment.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1e. Does the training utilize a valid training strategy and design? This involves providing information, giving demonstrations of good and bad behaviors, allowing opportunities to practice, and providing meaningful feedback.</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">AI-VR training programs should strive to incorporate all of these aspects.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1f. Does the training allow trainees to use the same cognitive processes that they will have to in the environment this learning should transfer to?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Create immersive training programs that replicate real life tasks and scenarios.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1g. Does the training keep trainees' attention by allowing trainees to monitor their progress toward goals?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">AI-VR training programs can allow trainees' to monitor progress via user interface (UI) elements such as maps and progress bars. AI-VR training programs can also implement checkpoints and endpoints with visual / haptic feedback (success screens, animations, sounds, etc.)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1h. Does the training encourage trainees to make errors?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Provide instant feedback and additional opportunities for practice to encourage errors.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1i. Does the training provide sufficient structure to trainees when allowing them to make decisions about their learning experience?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Build game elements that allow trainees to select training courses or use adaptive ai to tailor the sequencing of courses to the trainee's performance. Create scenarios that allow autonomous movement and decision making. Use algorithms that select training scenarios based on participant's training decisions.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f85"><p class="cl-8f383240"><span class="cl-8f334dc2">1j. Does the training simulation increase psychological fidelity (e.g. job-relevant, technology used fits the task)?</span></p></td><td class="cl-8f384f86"><p class="cl-8f383241"><span class="cl-8f334dc2">Ensure that the training programs are job-relevant, have good task-technology fit, and are immersive enough to boost user presence.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-8f384f87"><p class="cl-8f383240"><span class="cl-8f334dc2">1k. Does the training use established learning / outcome taxonomies (e.g. affective, cognitive, and/or behavioral indicators)?</span></p></td><td class="cl-8f384f88"><p class="cl-8f383241"><span class="cl-8f334dc2">Always include cognitive and / or behavioral indicators. Include reaction measures beyond engagement and self-efficacy to help provide more information to readers.</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td colspan="2" class="cl-8f384f89"><p class="cl-8f383242"><span class="cl-8f334dc1">Note. </span><span class="cl-8f334dc2">This table highlights guidelines for achieveing each of the training best practices suggested by Salas (2012).</span></p></td></tr></tfoot></table></div>
+</div>
+</div>
+<p>Contributions of this article include clarity on the current scope of AI-VR training research, insights into future methodologies for testing the benefits on AI in VR research, and comprehensive guidelines that will bolster future research and minimize confounds. The guidelines presented in this research can be used by educators, practitioners, and for future research development in the field of AI-VR training.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-salas2012science" class="csl-entry" role="listitem">
+Salas, E., Tannenbaum, S. I., Kraiger, K., &amp; Smith-Jentsch, K. A. (2012). The science of training and development in organizations: What matters in practice. <em>Psychological Science in the Public Interest</em>, <em>13</em>(2), 74–101.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -604,13 +640,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./04-results.html" class="pagination-link" aria-label="04-results">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">04-results</span></span>
+      <a href="./04-results.html" class="pagination-link" aria-label="Results">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Results</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./06-references.html" class="pagination-link" aria-label="06-references">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">06-references</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./06-references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

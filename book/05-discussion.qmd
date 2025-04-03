@@ -1,5 +1,25 @@
 ---
-title: "05-discussion"
+title: "Discussion"
 format: html
 ---
 
+This systematic literature review aimed to address whether AI-VR research follows learning and development best practices and whether AI adds incremental learning outcomes to VR training.Based on the molar view these results provide, this review presents several guidelines for AI-VR training programs going forward. The aim of these guidelines are to provide researchers of all disciplines with the tools needed to adhere to training best practices. These guidelines are synthesized and displayed in the table below, and build off of previous training research [@salas2012science]. We also recommend that researchers use a proper counterfactual (e.g., a control group) and adequate sample size in future studies.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| error: false
+
+library(rempsyc)
+
+future_research_guidelines <- readxl::read_xlsx("../poster/future_research_guidelines.xlsx")
+
+nice_table(future_research_guidelines,
+          title = c("Table", 
+                    "Guidelines for Future AI-VR Training Research and Adherence to Best Practices"),
+          note = "This table highlights guidelines for achieveing each of the training best practices suggested by Salas (2012)."
+          )
+```
+
+Contributions of this article include clarity on the current scope of AI-VR training research, insights into future methodologies for testing the benefits on AI in VR research, and comprehensive guidelines that will bolster future research and minimize confounds. The guidelines presented in this research can be used by educators, practitioners, and for future research development in the field of AI-VR training.

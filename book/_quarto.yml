@@ -7,7 +7,7 @@ project:
 book:
   title: "Can AI Enhance VR Training?"
   author: "Michael DeFabiis"
-  date: "2025"
+  date: "April 2025"
   cover-image: images/poster_logo_center2.png
   chapters:
     - index.qmd

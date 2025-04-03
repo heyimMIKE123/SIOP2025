@@ -1,5 +1,14 @@
 ---
-title: "03-methods"
+title: "Methods"
 format: html
 ---
 
+The approach taken for this systematic review was adopted from @page2021prisma's PRISMA guidelines. The entire search process was performed by one researcher in order to fulfill a preliminary examination requirement for a graduate program. Similar to previous systematic reviews [@carden2022defining], databases were chosen to provide a comprehensive review of AI-VR training programs. This review utilizes Google Scholar, which includes research from all occupational domains and, thus, is a great tool for finding AI-VR research.
+
+The search period was not limited by publication year, but most articles originated after 2019, highlighting the novelty of AI-VR training. The following search terms were used to identify AI-VR training articles on Google Scholar: “virtual reality training ai,” “virtual reality organizational training ai,” “virtual reality AND training AND ai,” and related variations. All searches were performed between March and May of 2023.
+
+To be included in the review, articles had to meet three criteria. First, they had to be relevant to organizational or educational training. Second, the training must be conducted using VR technology. Third, an AI component had to be used with the intent of enhancing training. Articles that did not clearly state AI as a focus in the title or abstract were excluded.In adherence to popular methodologies [@siddaway2019systematic], a PRISMA flowchart was created to show the article selection process (see Figure 1). After scanning and removing articles based on the inclusion criteria, 25 articles were selected.
+
+Each of the 25 articles was carefully reviewed, and the researcher applied a coding scheme to address the research questions outlined in this review. The researcher manually coded each article based on binary “Yes” or “No” responses to the research questions and identified borderline cases that are further outlined in the results. These explanations provided critical analysis of each article, helping identify deficiencies, omissions, conflicts, strengths, and weaknesses of the selected literature.
+
+![](images/PRISMA_PIC.png)

@@ -16,7 +16,7 @@ This resource accompanies our conference presentation and provides:
 
 -   References in APA format with citation support
 
-You can use the **navigation pane on the left** to explore the content.
+You can use the **navigation pane on the left** (icon in the top-left corner on mobileis) to explore the content.
 
 🧾 [**Download the Poster**](../images/poster_logo_center2.pdf)\
 📧 Questions? Contact: [defabiism1\@university.edu](mailto:defabiism1@montclair.edu)
