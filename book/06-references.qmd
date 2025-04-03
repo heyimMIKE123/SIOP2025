@@ -1,0 +1,12 @@
+---
+title: "06-references"
+format: html
+---
+
+---
+title: "References"
+nocite: "@*"
+---
+
+::: {#refs}
+:::

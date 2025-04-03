@@ -1,7 +1,35 @@
 project:
   type: book
-  output-dir: docs
-  title: "book"
+  output-dir: ../docs
+  post-render:
+    - powershell Copy-Item ../poster/poster_logo_center2.pdf ../docs/images/
+
+book:
+  title: "Can AI Enhance VR Training?"
+  author: "Michael DeFabiis"
+  date: "2025"
+  cover-image: images/poster_logo_center2.png
+  chapters:
+    - index.qmd
+    - 01-background.qmd
+    - 02-research_questions.qmd
+    - 03-methods.qmd
+    - 04-results.qmd
+    - 05-discussion.qmd
+    - 06-references.qmd
+
+bibliography:
+  - references/assessments.bib
+  - references/gamification.bib
+  - references/howard.bib
+  - references/medical.bib
+  - references/military.bib
+  - references/novelty.bib
+  - references/other_occupations.bib
+  - references/prelims.bib
+  - references/prelims_articles.bib
+  - references/references.bib
+csl: apa.csl
 
 
 
