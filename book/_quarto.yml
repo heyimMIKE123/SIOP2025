@@ -1,10 +1,8 @@
 project:
   type: book
-  output-dir: ../docs
-  resources: 
+  resources:
     - poster
-  post-render:
-    - powershell Copy-Item ../poster/poster_logo_center2.pdf ../docs/images/
+  output-dir: ../docs
 
 book:
   title: "Can AI Enhance VR Training?"
