@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: ../docs
+  resources: 
+    - poster
   post-render:
     - powershell Copy-Item ../poster/poster_logo_center2.pdf ../docs/images/
 
